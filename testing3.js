@@ -9,12 +9,11 @@ twitch-videoad.js application/javascript
 			console.log(arguments)
 			var url = new URL(arguments[0]);
                         url.searchParams.forEach(function(value, key) {
+							url.searchParams.delete(key);
 							console.log(value, key)
-							console.log(url.searchParams)
-							console.log(url.searchParams.getAll('hide_ads'))
 							console.log(arguments[0])
 							console.log(arguments)
-                            //url.searchParams.delete(key);
+                            url.searchParams.delete(key);
                         });
 						for(var value of url.searchParams.values()) {
 						  console.log(value);
