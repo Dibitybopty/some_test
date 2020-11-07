@@ -11,7 +11,7 @@ twitch-videoad.js application/javascript
                         url.searchParams.forEach(function(value, key) {
 							console.log(value, key)
 							console.log(url.searchParams)
-							console.log(url.searchParams.getAll())
+							console.log(url.searchParams.getAll('hide_ads'))
 							console.log(arguments[0])
 							console.log(arguments)
                             //url.searchParams.delete(key);
